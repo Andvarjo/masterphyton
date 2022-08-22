@@ -1,0 +1,63 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang = "es">
+
+<head>
+    <meta charset = "utf-8" />
+    <title>
+        {%block title%}
+            <!--titulo de cada pagina-->
+        {%endblock%}
+        
+        Andres Varela
+    </title>
+    {%load static%}
+    <link rel = "stylesheet" type = "text/css" href="{%static 'css/styles.css'%}">
+</head>
+<body>
+    <!--cabecera de la pagina-->
+    <header>
+        <div id="logotipo">
+            <!--logo django-->
+            <h1> Sitio web con Django ~ Andres varela </h1>
+        </div>
+        
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="/inicio"> INICIO </a>
+            </li>
+            
+            <li>
+                <a href="/hola-mundo"> Hola Mundo </a>
+            </li>
+            
+            <li>
+                <a href="/pagina-pruebas"> Pagina de pruebas </a>
+            </li>
+            
+            <li>
+                <a href="/contacto"> contacto </a>
+            </li>
+        </ul>
+    </nav>
+    
+
+    <div id="content">
+        <h2 class="title">Titulo de prueba</h2>
+        {%block content%}
+            <!--codigo que viene de templates-->
+            <strong> Contenido del bloque original </strong>
+        {%endblock%}
+    
+    </div>
+
+    
+    <footer>
+        Master en Python &copy; ANdres varela
+    </footer>
+
+        
+</body>    
+</html>

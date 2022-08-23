@@ -18,15 +18,15 @@
     <!--cabecera de la pagina-->
     <header>
         <div id="logotipo">
-            <!--logo django-->
-            <h1> Sitio web con Django ~ Andres varela </h1>
+            <img src='{%static 'images/logo.png'%}' />
+            <h1> Sitio web con Django </h1>
         </div>
         
     </header>
     <nav>
         <ul>
             <li>
-                <a href="/inicio"> INICIO </a>
+                <a href="/inicio"> Inicio </a>
             </li>
             
             <li>
@@ -34,28 +34,33 @@
             </li>
             
             <li>
-                <a href="/pagina-pruebas"> Pagina de pruebas </a>
+                <a href="/pagina-pruebas"> Pagina de Pruebas </a>
             </li>
             
             <li>
-                <a href="/contacto"> contacto </a>
+                <a href="/contacto"> Contacto </a>
             </li>
         </ul>
     </nav>
-    
-
-    <div id="content">
-        <h2 class="title">Titulo de prueba</h2>
-        {%block content%}
-            <!--codigo que viene de templates-->
-            <strong> Contenido del bloque original </strong>
-        {%endblock%}
-    
+    <div class="barra">
+        <span class="esquina-izquierda"></span>
+        <span class="relleno-barra"></span>
+        <span class="esquina-derecha"></span>
     </div>
 
+    <div class="box">
+        <div id="content">
+            
+            {%block content%}
+                <!--codigo que viene de templates-->
+                <strong> Contenido del bloque original </strong>
+            {%endblock%}
+        
+        </div>
+    </div>
     
     <footer>
-        Master en Python &copy; ANdres varela
+        Master en Python &copy; Andres varela
     </footer>
 
         

@@ -1,4 +1,155 @@
-body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: olive;
+/*Estilos generales */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+/*estilos cabecera*/
+
+header{
+    width: 1212px;
+    height: 140px;
+    background-color:rgb(53, 53, 53);
+    margin: 0px auto;
+}
+
+#logotipo{
+    width: 45%;
+    height: 130px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#logotipo h1{
+    display: block;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    float: left;
+    color: #3aaa78;
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+#logotipo img{
+    display: block;
+    float: left;
+    width: 60px;
+    margin-top: 20px;
+}
+
+/*Estilos barra de navegacion */
+
+nav{
+    width: 1250px;
+    height: 50px;
+    background-color: #1b1e1f;
+    border: 1px solid #333333;
+    margin: 0 auto;
+    box-shadow: 0px 22px 22px gray;
+    font-size: 15px;
+   
+
+}
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+
+
+}
+
+nav ul li{
+    line-height: 40px;
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #d1d4d6;
+    margin:0 auto;
+}
+nav ul li a:hover{
+    background-color: #2ba977;
+    box-shadow: 0px 0px 4px #333333 inset;
+    color: white;
+    padding-bottom: 6px;
+    transition: all 300ms;
+}
+
+.barra{
+    width: 69%;
+    margin:0 auto ;
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+.esquina-izquierda {
+    border-left: 20px solid transparent;
+    border-top: 10px solid #2b2f30;
+    flex-basis: 5%;
+}
+.esquina-derecha {
+    border-right: 20px solid transparent;
+    border-top: 10px solid #2b2f30;
+    flex-basis: 5%;
+}
+.relleno-barra {
+    display: block;
+    background-color: #2b2f30;
+    height: 9px;
+    flex-basis: 90%;
+}
+
+/* Estilos contenido central */
+
+#content{
+    width: 1212px;
+    min-height: 930px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+.box{
+    background-color: white;
+    width: 58%;
+    min-height: 930px;
+    padding: 30px;
+    border: 1px solid #dddd;
+    margin: 10px auto;
+    border-radius: 5px;
+    
+}
+
+
+.title{
+    color: #444;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+footer{
+    width:64%;
+    background-color: #1b1e1f;
+    border: 1px solod #333;
+    color: #d1d4d6;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 20px grey;
+    margin: 0 auto;
 }
